@@ -31,13 +31,13 @@ def main():
         else:
             print(f"Fila ignorada por error: {error}")
 
-    # 3. Filtrar solo los que necesitan reorden (stock < stock_minimo)
+    
     necesitan_reorden = [p for p in productos_validos if p.necesita_reorden()]
     
-    # 4. Ordenar por urgencia (el que más piezas le falten va primero)
+    
     necesitan_reorden.sort(key=lambda x: x.unidades_faltantes(), reverse=True)
     
-    # 5. Generar el archivo de salida
+    
     ruta_salida = "outputs/reporte_inventario.csv"
     escribir_reporte(necesitan_reorden, ruta_salida)
     
