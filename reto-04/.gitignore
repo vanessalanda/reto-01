@@ -9,8 +9,7 @@ __pycache__/
 
 # Resultados de pruebas personales
 # Esto permite que la carpeta outputs suba pero no tus archivos .csv
-outputs/*
-!.gitkeep
+outputs/*.csv
 
 # Archivos de sistema
 .DS_Store
